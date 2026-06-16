@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  firebird:
+    image: firebirdsql/firebird:5-snapshot-trixie
+    container_name: firebird_server
+    restart: always
+    ports:
+      - "3050:3050"
+    environment:
+      # Define a senha do superusuário SYSDBA
+      - FIREBIRD_ROOT_PASSWORD=SuaSenhaAqui
+      
+      # (Opcional) Cria um usuário comum no banco
+      - FIREBIRD_USER=teste
+      - FIREBIRD_PASSWORD=Senhauserteste
+      
+      # (Opcional) Cria um banco  na inicialização
+      - FIREBIRD_DATABASE=controle_estoque.fdb
+      - FIREBIRD_DATABASE_DEFAULT_CHARSET=UTF8
+      
+      # Define o fuso horário (ajuste para a sua região se necessário)
+      - TZ=America/Fortaleza
+      
+     
+    volumes:
+      # Persistência dos dados (bancos de dados)
+      - firebird_data:/var/lib/firebird/data
+
+volumes:
+  firebird_data:
+    driver: local
