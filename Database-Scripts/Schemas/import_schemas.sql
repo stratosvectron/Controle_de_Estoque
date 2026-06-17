@@ -1,1 +1,1 @@
-import schema_v1.sql
+INPUT schema_v1.sql

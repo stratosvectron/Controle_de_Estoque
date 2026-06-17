@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2026/06/15 04:58:12.000.139,=C:\Users\David\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/06/17 04:37:00.747,=C:\Users\David\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/06/17 04:38:27.686,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Controle_de_Estoque.dfm=C:\Users\David\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2026/06/17 04:38:27.686,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Controle_de_Estoque.pas=C:\Users\David\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/06/17 04:39:25.921,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Projeto_Controle_de_Estoque.dfm=C:\Users\David\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2026/06/17 04:40:31.888,=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
+    <Transaction>2026/06/17 04:40:45.683,=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit2.pas</Transaction>
+    <Transaction>2026/06/17 05:08:56.195,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Frconexao.pas=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit2.pas</Transaction>
+    <Transaction>2026/06/17 05:08:56.196,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Frconexao.dfm=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit2.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
