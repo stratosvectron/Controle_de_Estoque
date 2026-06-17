@@ -13,7 +13,7 @@ uses
 type
   TForm2 = class(TForm)
     FDConexao: TFDConnection;
-    FDPhysFBDriverLink: TFDPhysFBDriverLink;
+    FDPhysFBDriverLink1: TFDPhysFBDriverLink;
   private
     { Private declarations }
   public
