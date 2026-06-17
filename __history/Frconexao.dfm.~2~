@@ -21,14 +21,14 @@ object Form2: TForm2
       'Port=3050'
       'CharacterSet=UTF8'
       'DriverID=FB')
-    Left = 304
-    Top = 208
+    Left = 288
+    Top = 176
   end
-  object FDPhysFBDriverLink1: TFDPhysFBDriverLink
+  object FDPhysFBDriverLink: TFDPhysFBDriverLink
     VendorLib = 
       'C:\Users\David\Documents\Projetos\Controle_de_Estoque\Database-S' +
-      'cripts\fbclient.dll'
-    Left = 96
-    Top = 224
+      'cripts\fbclientx32.dll'
+    Left = 104
+    Top = 176
   end
 end
