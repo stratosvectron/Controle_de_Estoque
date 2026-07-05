@@ -2,15 +2,17 @@ program Projeto_Controle_de_Estoque;
 
 uses
   Vcl.Forms,
-  Controle_de_Estoque in 'Controle_de_Estoque.pas' {Form1},
-  Frconexao in 'Frconexao.pas' {Form2};
+  Controle_de_Estoque in 'Controle_de_Estoque.pas' {FormMain},
+  Frconexao in 'Frconexao.pas' {Form2},
+  uDmDados in 'Forms\uDmDados.pas' {DM_: TDataModule};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFormMain, FormMain);
   Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TDM_, DM_);
   Application.Run;
 end.

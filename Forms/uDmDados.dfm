@@ -1,0 +1,26 @@
+object dmDados: TdmDados
+  Height = 230
+  Width = 307
+  object FDConexao: TFDConnection
+    Params.Strings = (
+      'Database=/var/lib/firebird/data/controle_estoque.fdb'
+      'User_Name=dbadmin'
+      'Password=Admin@2026'
+      'Protocol=TCPIP'
+      'Server=localhost'
+      'Port=3050'
+      'CharacterSet=UTF8'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 179
+    Top = 78
+  end
+  object FDPhysFBDriverLink: TFDPhysFBDriverLink
+    VendorLib = 
+      'C:\Users\David\Documents\Projetos\Controle_de_Estoque\Database-S' +
+      'cripts\fbclient.dll'
+    Left = 80
+    Top = 78
+  end
+end
