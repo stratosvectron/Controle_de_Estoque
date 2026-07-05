@@ -116,6 +116,10 @@
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="Classes\uBiblioteca.pas"/>
+        <DCCReference Include="Forms\uFormConfigBanco.pas">
+            <Form>FormConfigBanco</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

@@ -4,7 +4,10 @@
     <Transaction>2026/07/04 21:17:21.000.667,=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
     <Transaction>2026/07/04 21:22:17.000.931,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Forms\uDmDados.pas</Transaction>
     <Transaction>2026/07/04 21:22:17.000.931,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.dfm=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Forms\uDmDados.dfm</Transaction>
-    <Transaction>2026/07/04 21:35:17.512,=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
-    <Transaction>2026/07/04 21:36:01.990,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Classes\uBiblioteca.pas=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
+    <Transaction>2026/07/04 21:35:17.000.512,=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
+    <Transaction>2026/07/04 21:36:01.000.990,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Classes\uBiblioteca.pas=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
+    <Transaction>2026/07/05 10:23:16.000.019,=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
+    <Transaction>2026/07/05 10:24:40.000.005,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.dfm=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Forms\uFormConfigBanco.dfm</Transaction>
+    <Transaction>2026/07/05 10:24:40.000.005,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Forms\uFormConfigBanco.pas</Transaction>
   </Transactions>
 </BorlandProject>

@@ -1,5 +1,4 @@
 object dmDados: TdmDados
-  OnCreate = DataModuleCreate
   Height = 288
   Width = 384
   PixelsPerInch = 120

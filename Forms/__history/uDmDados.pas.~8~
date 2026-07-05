@@ -40,7 +40,7 @@ begin
 
  try
 
- FDConexao.Params.Database := GetValorIni(ExtractFilePath(Application.ExeName) + 'config.ini', 'CONFIGURAÇÃO','LOCAL_DB');
+ FDConexao.Params.Database := GetValorIni(ExtractFilePath(Application.ExeName), 'CONFIGURACAO','LOCAL');
 
  //Verifica se consegue conectar
  FDConexao.Connected :=true;
@@ -57,8 +57,6 @@ end;
 
 procedure TdmDados.DataModuleCreate(Sender: TObject);
 begin
-
-// Chama o procedimento de carregar o banco
 CarregaBanco;
 end;
 

@@ -1,8 +1,6 @@
 object dmDados: TdmDados
-  OnCreate = DataModuleCreate
-  Height = 288
-  Width = 384
-  PixelsPerInch = 120
+  Height = 230
+  Width = 307
   object FDConexao: TFDConnection
     Params.Strings = (
       'Database=/var/lib/firebird/data/controle_estoque.fdb'
@@ -15,14 +13,14 @@ object dmDados: TdmDados
       'DriverID=FB')
     Connected = True
     LoginPrompt = False
-    Left = 224
-    Top = 98
+    Left = 179
+    Top = 78
   end
   object FDPhysFBDriverLink: TFDPhysFBDriverLink
     VendorLib = 
       'C:\Users\David\Documents\Projetos\Controle_de_Estoque\Database-S' +
       'cripts\fbclient.dll'
-    Left = 100
-    Top = 98
+    Left = 80
+    Top = 78
   end
 end

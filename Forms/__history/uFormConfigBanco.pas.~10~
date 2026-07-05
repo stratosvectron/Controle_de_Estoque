@@ -1,0 +1,86 @@
+unit uFormConfigBanco;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
+  Vcl.StdCtrls, uBiblioteca;
+
+type
+  TFormConfigBanco = class(TForm)
+    Image1: TImage;
+    Label1: TLabel;
+    edtLocal: TEdit;
+    Button1: TButton;
+    opnPastas: TOpenDialog;
+    Button2: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+
+  procedure Configura;
+
+  public
+    { Public declarations }
+  end;
+
+var
+  FormConfigBanco: TFormConfigBanco;
+
+implementation
+
+{$R *.dfm}
+
+{ TFormConfigBanco }
+
+procedure TFormConfigBanco.Button1Click(Sender: TObject);
+begin
+    Configura;
+end;
+
+procedure TFormConfigBanco.Button2Click(Sender: TObject);
+
+var vFilenameremoto:string;
+
+begin
+
+
+    //Pegar nome do arquivo da base, pegar caminho do aplicativo e adicionar nome do arquivo ini
+
+    vFileNameremoto:= ExtractFilePath(Application.ExeName) + 'config.ini';
+
+    //Escrever dados no arquivo ini
+    SetValorIni(vFileNameremoto, 'CONFIGURAÇÃO', 'LOCAL_DB', edtLocal.Text);
+
+    ShowMessage('Caminho configurado');
+
+
+
+
+end;
+
+procedure TFormConfigBanco.Configura;
+
+// Variavel para escrever caminho do arquivo ini
+var vFileName: string;
+
+begin
+
+  if opnPastas.Execute then
+    begin
+
+    //Pegar nome do arquivo da base, pegar caminho do aplicativo e adicionar nome do arquivo ini
+    edtLocal.Text := opnPastas.FileName;
+    vFileName     := ExtractFilePath(Application.ExeName) + 'config.ini';
+
+    //Escrever dados no arquivo ini
+    SetValorIni(vFileName, 'CONFIGURAÇÃO', 'LOCAL_DB', edtLocal.Text);
+
+    ShowMessage('Caminho configurado');
+
+    end;
+
+end;
+
+end.

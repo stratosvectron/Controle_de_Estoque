@@ -7,25 +7,50 @@ uses
   FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.FB,
   FireDAC.Phys.FBDef, FireDAC.VCLUI.Wait, FireDAC.Phys.IBBase, Data.DB,
-  FireDAC.Comp.Client;
+  FireDAC.Comp.Client, uBiblioteca, uFormConfigBanco, Vcl.Forms;
 
 type
-  TDM_ = class(TDataModule)
+  TdmDados = class(TDataModule)
     FDConexao: TFDConnection;
     FDPhysFBDriverLink: TFDPhysFBDriverLink;
   private
-    { Private declarations }
+
+    //procedure para fazer carregamento do banco
+    procedure CarregaBanco;
+
+
   public
     { Public declarations }
   end;
 
 var
-  DM_: TDM_;
+  dmDados: TdmDados;
 
 implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
 {$R *.dfm}
+
+procedure TdmDados.CarregaBanco;
+
+
+begin
+
+ try
+
+ FDConexao.Params.Database := GetValorIni(ExtractFilePath(Application.ExeName), 'CONFIGURACAO','LOCAL');
+
+ FDConexao.Connected :=true;
+
+ except
+
+ FormConfigBanco.ShowModal;
+
+ end;
+
+
+
+end;
 
 end.

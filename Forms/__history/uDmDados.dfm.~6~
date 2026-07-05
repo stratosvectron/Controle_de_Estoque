@@ -13,7 +13,6 @@ object dmDados: TdmDados
       'Port=3050'
       'CharacterSet=UTF8'
       'DriverID=FB')
-    Connected = True
     LoginPrompt = False
     Left = 224
     Top = 98

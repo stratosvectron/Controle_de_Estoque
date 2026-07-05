@@ -13,7 +13,6 @@ type
   TdmDados = class(TDataModule)
     FDConexao: TFDConnection;
     FDPhysFBDriverLink: TFDPhysFBDriverLink;
-    procedure DataModuleCreate(Sender: TObject);
   private
 
     //procedure para fazer carregamento do banco
@@ -40,7 +39,7 @@ begin
 
  try
 
- FDConexao.Params.Database := GetValorIni(ExtractFilePath(Application.ExeName) + 'config.ini', 'CONFIGURAÇÃO','LOCAL_DB');
+ FDConexao.Params.Database := GetValorIni(ExtractFilePath(Application.ExeName), 'CONFIGURACAO','LOCAL');
 
  //Verifica se consegue conectar
  FDConexao.Connected :=true;
@@ -53,13 +52,6 @@ begin
 
 
 
-end;
-
-procedure TdmDados.DataModuleCreate(Sender: TObject);
-begin
-
-// Chama o procedimento de carregar o banco
-CarregaBanco;
 end;
 
 end.

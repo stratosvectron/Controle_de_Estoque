@@ -1,0 +1,25 @@
+object FormConfigBanco: TFormConfigBanco
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'Configurar Base de Dados'
+  ClientHeight = 319
+  ClientWidth = 616
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poDesktopCenter
+  TextHeight = 15
+  object Image1: TImage
+    Left = 0
+    Top = 0
+    Width = 257
+    Height = 319
+    Align = alLeft
+    ExplicitLeft = 8
+    ExplicitHeight = 311
+  end
+end

@@ -40,7 +40,7 @@ begin
 
  try
 
- FDConexao.Params.Database := GetValorIni(ExtractFilePath(Application.ExeName) + 'config.ini', 'CONFIGURAÇÃO','LOCAL_DB');
+ FDConexao.Params.Database := GetValorIni(ExtractFilePath(Application.ExeName) + 'config.ini', 'CONFIGURACAO','LOCAL');
 
  //Verifica se consegue conectar
  FDConexao.Connected :=true;
