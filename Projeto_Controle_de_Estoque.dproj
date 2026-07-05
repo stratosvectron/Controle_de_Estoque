@@ -98,6 +98,7 @@
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
+        <Icon_MainIcon>Projeto_Controle_de_Estoque_Icon1.ico</Icon_MainIcon>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -110,10 +111,11 @@
             <Form>Form2</Form>
         </DCCReference>
         <DCCReference Include="Forms\uDmDados.pas">
-            <Form>DM_</Form>
+            <Form>dmDados</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
+        <DCCReference Include="Classes\uBiblioteca.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -144,7 +146,7 @@
                 <Platform value="Win64">False</Platform>
             </Platforms>
             <Deployment Version="4">
-                <DeployFile LocalName="Projeto_Controle_de_Estoque.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Exe\Projeto_Controle_de_Estoque.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>Projeto_Controle_de_Estoque.exe</RemoteName>
                         <Overwrite>true</Overwrite>

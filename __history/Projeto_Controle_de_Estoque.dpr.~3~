@@ -4,8 +4,7 @@ uses
   Vcl.Forms,
   Controle_de_Estoque in 'Controle_de_Estoque.pas' {FormMain},
   Frconexao in 'Frconexao.pas' {Form2},
-  uDmDados in 'Forms\uDmDados.pas' {dmDados: TDataModule},
-  uBiblioteca in 'Classes\uBiblioteca.pas';
+  uDmDados in 'Forms\uDmDados.pas' {DM_: TDataModule};
 
 {$R *.res}
 
@@ -14,6 +13,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TFormMain, FormMain);
   Application.CreateForm(TForm2, Form2);
-  Application.CreateForm(TdmDados, dmDados);
+  Application.CreateForm(TDM_, DM_);
   Application.Run;
 end.

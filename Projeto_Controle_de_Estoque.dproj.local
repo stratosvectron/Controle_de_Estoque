@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2026/07/04 21:17:21.667,=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
-    <Transaction>2026/07/04 21:22:17.931,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Forms\uDmDados.pas=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
-    <Transaction>2026/07/04 21:22:17.931,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Forms\uDmDados.dfm=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.dfm</Transaction>
+	<Transactions>
+    <Transaction>2026/07/04 21:17:21.000.667,=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
+    <Transaction>2026/07/04 21:22:17.000.931,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Forms\uDmDados.pas</Transaction>
+    <Transaction>2026/07/04 21:22:17.000.931,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.dfm=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Forms\uDmDados.dfm</Transaction>
+    <Transaction>2026/07/04 21:35:17.512,=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
+    <Transaction>2026/07/04 21:36:01.990,C:\Users\David\Documents\Projetos\Controle_de_Estoque\Classes\uBiblioteca.pas=C:\Users\David\Documents\Projetos\Controle_de_Estoque\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>
