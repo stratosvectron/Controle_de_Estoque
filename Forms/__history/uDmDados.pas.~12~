@@ -7,7 +7,7 @@ uses
   FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.FB,
   FireDAC.Phys.FBDef, FireDAC.VCLUI.Wait, FireDAC.Phys.IBBase, Data.DB,
-  FireDAC.Comp.Client, uBiblioteca, uFormConfigBanco, Vcl.Forms, Vcl.Dialogs;
+  FireDAC.Comp.Client, uBiblioteca, uFormConfigBanco, Vcl.Forms;
 
 type
   TdmDados = class(TDataModule)
@@ -46,15 +46,8 @@ begin
  FDConexao.Connected :=true;
 
  except
-    on E: exception do
-    begin
-         ShowMessage('Erro ao conectar! Motivo:' + E.Message );
-
-         // Se não conectar, exibe a tela de configuração
-         FormConfigBanco.ShowModal;
-    end;
-
-
+ // Se não conectar, exibe a tela de configuração
+ FormConfigBanco.ShowModal;
 
  end;
 
