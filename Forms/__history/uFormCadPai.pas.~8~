@@ -20,6 +20,9 @@ type
     Button5: TButton;
     fdQryCadastro: TFDQuery;
     fdUpdCadastro: TFDUpdateSQL;
+    fdTras: TFDTransaction;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,5 +35,26 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TuFormCadastroP.Button1Click(Sender: TObject);
+begin
+
+    if not (fdQryCadastro.State in [dsEdit,dsInsert] )then
+        begin
+             //Se não estiver em modo de edição e inser��o, colocal em inser��o
+            fdQryCadastro.Insert;
+        end;
+
+
+end;
+
+procedure TuFormCadastroP.Button2Click(Sender: TObject);
+begin
+         if not ( fdQryCadastro.State in [dsEdit,dsInsert] )then
+        begin
+             //Se n�o estiver em modo de edi��o e inser��o, colocal em inser��o
+            fdQryCadastro.Post;
+        end;
+end;
 
 end.

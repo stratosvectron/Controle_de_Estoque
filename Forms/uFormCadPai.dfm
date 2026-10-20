@@ -19,7 +19,6 @@ object uFormCadastroP: TuFormCadastroP
     Height = 57
     Align = alTop
     TabOrder = 0
-    ExplicitWidth = 1056
     object Button1: TButton
       Left = 16
       Top = 17
@@ -45,6 +44,7 @@ object uFormCadastroP: TuFormCadastroP
       Height = 25
       Caption = 'Cancelar'
       TabOrder = 2
+      OnClick = Button3Click
     end
     object Button4: TButton
       Left = 967
@@ -53,6 +53,7 @@ object uFormCadastroP: TuFormCadastroP
       Height = 25
       Caption = 'Sair'
       TabOrder = 3
+      OnClick = Button4Click
     end
     object Button5: TButton
       Left = 266
@@ -61,6 +62,7 @@ object uFormCadastroP: TuFormCadastroP
       Height = 25
       Caption = 'Excluir'
       TabOrder = 4
+      OnClick = Button5Click
     end
   end
   object fdQryCadastro: TFDQuery
