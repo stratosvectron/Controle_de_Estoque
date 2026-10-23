@@ -19,50 +19,50 @@ object uFormCadastroP: TuFormCadastroP
     Height = 57
     Align = alTop
     TabOrder = 0
-    object Button1: TButton
+    object btnnovo: TButton
       Left = 16
       Top = 17
       Width = 75
       Height = 25
       Caption = 'Novo'
       TabOrder = 0
-      OnClick = Button1Click
+      OnClick = btnnovoClick
     end
-    object Button2: TButton
+    object btnsalvar: TButton
       Left = 104
       Top = 17
       Width = 75
       Height = 25
       Caption = 'Salvar'
       TabOrder = 1
-      OnClick = Button2Click
+      OnClick = btnsalvarClick
     end
-    object Button3: TButton
+    object btncancelar: TButton
       Left = 185
       Top = 17
       Width = 75
       Height = 25
       Caption = 'Cancelar'
       TabOrder = 2
-      OnClick = Button3Click
+      OnClick = btncancelarClick
     end
-    object Button4: TButton
+    object btnsair: TButton
       Left = 967
       Top = 17
       Width = 75
       Height = 25
       Caption = 'Sair'
       TabOrder = 3
-      OnClick = Button4Click
+      OnClick = btnsairClick
     end
-    object Button5: TButton
+    object btnexcluir: TButton
       Left = 266
       Top = 17
       Width = 75
       Height = 25
       Caption = 'Excluir'
       TabOrder = 4
-      OnClick = Button5Click
+      OnClick = btnexcluirClick
     end
   end
   object fdQryCadastro: TFDQuery
@@ -78,6 +78,7 @@ object uFormCadastroP: TuFormCadastroP
     Top = 520
   end
   object fdTras: TFDTransaction
+    Connection = dmDados.FDConexao
     Left = 968
     Top = 520
   end

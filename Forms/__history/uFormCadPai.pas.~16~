@@ -23,6 +23,9 @@ type
     fdTras: TFDTransaction;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,9 +42,9 @@ implementation
 procedure TuFormCadastroP.Button1Click(Sender: TObject);
 begin
 
-    if not fdQryCadastro.State in [dsEdit,dsInsert] then
+    if not (fdQryCadastro.State in [dsEdit,dsInsert] )then
         begin
-             //Se não estiver em modo de edição e inserção, colocal em inserção
+             //Se nÃ£o estiver em modo de ediÃ§Ã£o e inserï¿½ï¿½o, colocal em inserï¿½ï¿½o
             fdQryCadastro.Insert;
         end;
 
@@ -50,11 +53,39 @@ end;
 
 procedure TuFormCadastroP.Button2Click(Sender: TObject);
 begin
-         if not fdQryCadastro.State in [dsEdit,dsInsert] then
+         if ( fdQryCadastro.State in [dsEdit,dsInsert] )then
         begin
-             //Se não estiver em modo de edição e inserção, colocal em inserção
+             //Se nï¿½o estiver em modo de ediï¿½ï¿½o e inserï¿½ï¿½o, colocal em inserï¿½ï¿½o
             fdQryCadastro.Post;
+            fdTras.CommitRetaining;
         end;
+end;
+
+procedure TuFormCadastroP.Button3Click(Sender: TObject);
+begin
+      if ( fdQryCadastro.State in [dsEdit,dsInsert] )then  begin
+              //Cancelar TransaÃ§Ã£o
+          fdQryCadastro.cancel;
+          fdTras.Rollback;
+      end;
+
+end;
+
+procedure TuFormCadastroP.Button4Click(Sender: TObject);
+begin
+      //Sair da tela
+    self.close;
+end;
+
+procedure TuFormCadastroP.Button5Click(Sender: TObject);
+begin
+                 //Colocar em ediÃ§Ã£o
+    fdQryCadastro.Edit;
+                //Atualziar campo da tabela indicando exclusÃ£o
+    fdQryCadastro.FieldByName('DT_EXCLUIDO').AsDateTime := Date;
+    fdQryCadastro.Post;
+    fdTras.CommitRetaining;
+
 end;
 
 end.

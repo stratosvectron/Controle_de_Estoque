@@ -1,4 +1,4 @@
-unit uFormCadPai;
+﻿unit uFormCadPai;
 
 interface
 
@@ -13,19 +13,19 @@ uses
 type
   TuFormCadastroP = class(TForm)
     Panel1: TPanel;
-    Button1: TButton;
-    Button2: TButton;
-    Button3: TButton;
-    Button4: TButton;
-    Button5: TButton;
+    btnnovo: TButton;
+    btnsalvar: TButton;
+    btncancelar: TButton;
+    btnsair: TButton;
+    btnexcluir: TButton;
     fdQryCadastro: TFDQuery;
     fdUpdCadastro: TFDUpdateSQL;
     fdTras: TFDTransaction;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
-    procedure Button5Click(Sender: TObject);
+    procedure btnnovoClick(Sender: TObject);
+    procedure btnsalvarClick(Sender: TObject);
+    procedure btncancelarClick(Sender: TObject);
+    procedure btnsairClick(Sender: TObject);
+    procedure btnexcluirClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,7 +39,7 @@ implementation
 
 {$R *.dfm}
 
-procedure TuFormCadastroP.Button1Click(Sender: TObject);
+procedure TuFormCadastroP.btnnovoClick(Sender: TObject);
 begin
 
     if not (fdQryCadastro.State in [dsEdit,dsInsert] )then
@@ -51,7 +51,7 @@ begin
 
 end;
 
-procedure TuFormCadastroP.Button2Click(Sender: TObject);
+procedure TuFormCadastroP.btnsalvarClick(Sender: TObject);
 begin
          if ( fdQryCadastro.State in [dsEdit,dsInsert] )then
         begin
@@ -61,7 +61,7 @@ begin
         end;
 end;
 
-procedure TuFormCadastroP.Button3Click(Sender: TObject);
+procedure TuFormCadastroP.btncancelarClick(Sender: TObject);
 begin
       if ( fdQryCadastro.State in [dsEdit,dsInsert] )then  begin
               //Cancelar Transação
@@ -71,13 +71,13 @@ begin
 
 end;
 
-procedure TuFormCadastroP.Button4Click(Sender: TObject);
+procedure TuFormCadastroP.btnsairClick(Sender: TObject);
 begin
       //Sair da tela
     self.close;
 end;
 
-procedure TuFormCadastroP.Button5Click(Sender: TObject);
+procedure TuFormCadastroP.btnexcluirClick(Sender: TObject);
 begin
                  //Colocar em edição
     fdQryCadastro.Edit;
